@@ -1,0 +1,283 @@
+body {
+    margin: 0% /* This ensure the site displays all the way to the edge of the screen */
+}
+
+h1 {
+    text-transform: capitalize;
+    font-family: "Myriad Pro Condensed"; /* Sets font family of all h1 headings */
+    text-align: center;
+    margin-top: 2%; /* Adds a small margin above h1 */
+    color: #C0C0C0;
+}
+
+/* Heading 1 element hover effect */
+h1:hover {
+    filter: grayscale(15%); /* Adds a slightly gray filter when hovered over */
+    transform: scale(.7); /* When hovered over, increase in size by .7 */
+    transition: transform 2s; /* Transformation will last 2 seconds */
+}
+
+/* Styling for portfolio title text */
+.white-text {
+    color: #fff; /* Used to change the color of the portfolio title text */
+}
+
+/* Paragraph elements */
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify; /* Justify text within paragraph elements */
+    letter-spacing: 2px; /* Expands the text slightly */
+    font-size: 18;
+    padding-left: 18; /* Adds padding to the left of the paragraph */
+    padding-right: 18px;
+}
+
+/* Paragraph hover */
+p:hover {
+    transition: transform 2s;
+    transform: scale(.7);
+}
+
+/* Center class - applies to all elements with the class "center" */
+.center {
+    text-align: center;
+}
+
+/* Center class hover - Only affects the quote, github link, and footer */
+.center:hover {
+    transition: transform 2s;
+    transform: scale(.7);
+}
+
+/* Anchor elements */
+a {
+    color: green; /* All links will be green */
+}
+
+/* Quotation elements */
+q {
+    font-style: italic; /* Italicized quote */
+}
+
+/* Image elements */
+img {
+    filter: grayscale(60%); /* Rids pictures of 60% of color */
+    border-radius: 6px; /* Gives images slightly rounded corners */
+    max-width: 90%; /* Ensures images stay within the width of container */
+    height: 300px; /* Sets height of images */
+    display: block; /* Images are able to be centered */
+    margin-left: auto; /* Centers images in combination with right */
+    margin-right: auto;
+}
+
+/* Image hover */
+img:hover {
+    filter: grayscale(10%); /* Brings back most color when hovered */
+    transition: transform 2s;
+    transform: scale(.7);
+}
+
+/* @media rule is used in media queries to apply different style for different media/types of devices */
+/* On screens 576px and small the images will be 100px tall and centered vertically in the column */
+@media screen and (max-width: 576px) {
+    img {
+        height: 100px;
+        margin-top: 150px;
+    }
+}
+
+/* Styling for footer element */
+footer {
+    padding: 3%; /* Gives footer padding that is equal to 3% of width of elememt area */
+    background-color: silver;
+}
+/***** END OF GENERAL STYLING *****/
+
+/***** NAVBAR STYLING *****/
+.Navbar {
+    overflow: hidden; /* Ensures that any content that overflows beyond the boundary of the nav is not displayed */
+    background-color: grey; /*Colors nav bar */
+    position: fixed; /* Keeps navbar at top of screen as we scroll */
+    top: 0; /* Ensures no space is displayed above navbar */
+    width: 90%; /* Navbar span 90% of width of page */
+    z-index: 1; /* Ensures other elements don't display over navbar */
+    -webkit-animation: moveNav 3s; /* Applies moveNav animation below for Safari 4.0 - 8.0 */
+    animation: moveNav 3s; /* Applies moveNav animation for other browsers */
+}
+
+/* moveNav animation effect for moving nav bar in from left of screen */
+@keyframes moveNav {
+    from {left: -100vw;} /* Navbar starting off screen to left */
+    to {left: 0vw;} /* Moves navbar into place on screen */
+}
+
+/* Navbar links */
+.Navbar a {
+    float: left; /* Specifies the text floats on left on navbar */
+    display: block; /* Ensures other text will be displayed on same line or row, instead of new line */
+    color: white; /* Font color for text on navbar */
+    padding: 12px 18px; /* Adds padding around text */
+    text-decoration: none; /* Gets rid of underlines under text on navbar */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    position: relative; /* Sets text relative to normal positioning, allowing us to use animation below */
+    -webkit-animation: moveNavtext 5s; /* Applies the moveNavText animation for 5 s */
+}
+
+/* moveNavText animation effect for moving navbar text from above the view to navbar */
+@keyframes moveNavText {
+    from {top: -100vw;} /* Sets navbar text 100% above viewport */
+    to {top: 0vw;} /* Lowers navbar text onto navbar */
+}
+
+/* Screen 576px and small will display navbar links equally distributed */
+@media screen and (max-width: 576px) {
+    .Navbar a{
+        width: 25%; /* Makes each link take up 1/4 of navbar */
+        font-size: 10px;
+    }
+}
+
+/* Navbar hober */
+.Navbar a:hover {
+    background-color: #fff;
+    color: gray;
+    font-weight: bold;
+}
+
+/* Navbar home button */
+.Navbar a.active { /* This gargets the a element on navbar with "active" class */
+    background-color: lightgray;
+}
+/***** END OF NAVBAR STYLING *****/
+
+/***** VIDEO STYLING *****/
+/* Formatting for background video */
+#Python_Code {
+    position: fixed; /* Fixes video to page */
+    right: 0; /* Ensures there is no space between edge of video and page */
+    bottom: 0;
+    min-width: 90%;
+    z-index: -1; /* Places video behind other elements on page */
+}
+
+/* Screens that are 576px and smaller won't display background video */
+@media screen and (max-width: 576px) {
+    #Python_Code {
+        display: none;
+    }
+}
+
+/* Texts over the video */
+.Video_Text {
+    background: rgba(0, 0, 0, 0.3); /* Provides a semi-transparent background for text to sit over */
+    color: white;
+    width: 100%; /* Ensures video-text container fills width of video */
+    padding: 18px; /* Adds padding around video-text container so background goes slightly beyond text */
+    position: relative; /* Sets text relative to normal positioning, allowing us to use animation below */
+    -webkit-animation: moveVideoText 5s;
+    animation: moveVideoText 5s;
+}
+
+/* Animation effect causes overlay video text to move up from bottom of page upon page load */
+@keyframes moveVideoText {
+    from {top: -100vw;} /* Sets position of video text to above viewport */
+    to {top: 0vw;} /* Moves video text to normal positioning on viewport */
+}
+/***** END OF VIDEO STYLING *****/
+
+/***** TABLE STYLING - covers styling of columns and rows within table *****/
+* { /* asterik is universal selector that applies this effect to elements on page */
+    box-sizing: border-box;
+}
+
+.Column_1 {
+    float: left;
+    width: 50%; /* Ensures column takes up half of page width */
+    padding: 12px;
+    padding-top: 5%; /* Ensures there's space between top of column and headings */
+    height: 350px; /* Sets height of column to 350px */
+    background-color: #fff;
+}
+
+/* Screens 576 and smaller will display */
+@media screen and (max-width: 576px) {
+    .Column_1 {
+        overflow: auto;
+    }
+}
+
+.Column_2 {
+    float: left;
+    width: 50%;
+    padding: 12px;
+    padding-top: 2.4%;
+    height: 350px;
+    background-color: gray;
+}
+
+/* Class applied to columns in final row, overriding height and padding to provide more room for contact form while keeping rest of formatting from Column_1 or 2 */
+.Column_tall {
+    padding-top: 3%;
+    height: 400px;
+}
+
+/* Inserts something after content of selected elements (in this case the elements with class "Row") */
+.Row:after {
+    content: ""; /* Allows footer (covered lower down) to be displayed - removing makes footer overwrite a column */
+    display: table; /* Specifies type of display behavior; table value tells browser to treat element as table */
+    clear: both; /* Clears other elements from floating on left or right of element */
+}
+/***** END OF TABLE STYLING *****/
+
+/***** CONTACT FORM STYLING *****/
+/* input[type=text] targets text input sections of contact form */
+input[type=text] {
+    width: 100%; /* Each box covers full width of container */
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 3px;
+    box-sizing: border-box; /* Creates box w/ border around contact form input boxes */
+    margin-top: 3px; /* Adds margin to top of text box */
+    margin-bottom: 14px;
+    resize: vertical; /* Allows user to resize text boxes vertically */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hover for boxes */
+input[type=text]:hover {
+    box-shadow: 0 0 3px "color:green" inset; /* Creates black shadow in text box when hovered */
+}
+
+/* Submit button */
+input[type=submit] {
+    background-color: black;
+    color: white;
+    font-weight: normal;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer; /* Changes cursor to pointer when over button */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Hover for button */
+input[type=submit]:hover {
+    background-color: white;
+    color: gray;
+    transform: scale(1.2);
+    transition: transform 1.2s;
+}
+
+/* Form element */
+form{
+    border-radius: 3px;
+    background-color: aliceblue;
+    padding: 8px;
+    font-family: 'Times New Roman', Times, serif;
+}
+/***** END OF CONTACT FORM STYLING *****/

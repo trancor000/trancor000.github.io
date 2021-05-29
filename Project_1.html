@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<!-- Head -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=devide-width" />
+    <title>Corey Tran</title>
+    <link rel="stylesheet" type="text/css" href="./Project_1.css">
+</head>
+
+<!-- Body -->
+
+<body class="Background">
+
+    <!-- Navbar -->
+    <div class="Navbar">
+        <a class="active" href="#home">HOME</a>
+        <a href="#about">About</a>
+        <a href="#github">GitHub</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- Background Video -->
+    <div id="home">
+        <video autoplay muted loop id="Programming_Video">
+            <source src="https://youtu.be/MAlSjtxy5ak?t=8" type="video/mp4">
+            <!-- Display message if video fails to run-->
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+
+    <!-- Video Text -->
+    <div class="Video_Text">
+        <h1 class="white-text">Corey's Portfolio</h1>
+        <strong>
+            <p class="center">
+                <q>I serve not for the benefit of finding joy in acts of service,
+                    <br>but to benefit and make a difference to those around me.
+                </q>
+                <br>
+                <br>My name is Corey Tran. Welcome to my unofficial portfolio website. Here, I will be telling you about
+                my
+                background and experience.
+                <br>
+                <br>I hope you enjoy your visit!
+            </p>
+        </strong>
+    </div>
+
+    <!-- About Section -->
+    <div class="Row" id="about">
+        <!-- Left Column -->
+        <div class="Column_2">
+            <img src="img/pythoncode.jpg" alt="Python Logo">
+        </div>
+        <!-- Right Column -->
+        <div class="Column_1">
+            <h1>About</h1>
+            <p>
+                I am a Chick-fil-A Team Lead who enjoys coding. As this pandemic slowly dies down, I find myself working
+                out
+                and trying to be healthier.
+                <br>
+                <br>I will be graduating from <a href="https://www.learncodinganywhere.com" target="_blank">The Tech
+                    Academy</a> by the end of the summer. My main areas of knowledge in languages are HTML, CSS, and
+                Pyton.
+                <br>
+                <br>I am unsure what I will be doing with my skills in the long run but my goal is to be able to provide
+                coding for those who may need it. <a href="#contact">Contact</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- GitHub Section -->
+    <div class="Row" id="github">
+        <!-- Left Column -->
+        <div class="Column_1">
+            <h1>GitHub</h1>
+            <p>
+                You can view my coding projects on my GitHub profile here:
+                <br>
+            <p class="center"><a href="https://github.com/trancor000" target="_blank">Corey Tran's Github</a>
+            </p>
+            </p>
+        </div>
+        <!-- Right Column -->
+        <div class="Column_2">
+            <a href="https://github.com/trancor000" target="_blank"><img src="img/github.png" alt="GitHub Logo"></a>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="Row" id="contact">
+        <!-- Contact image, left column -->
+        <div class="Column_2 Column_tall">
+            <img src="img/email_icon.png" alt="Email_Image">
+        </div>
+        <!-- Contact form, right column -->
+        <div class="Column_1 Column_tall">
+            <h1>Contact</h1>
+            <!-- This specifies where and how to send the form data; we are leaving it blank -->
+            <form action="" method="POST">
+                <!-- Here we are utiliizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+                <label>Name:</label>
+                <input type="text" placeholder="Please enter your name here">
+                <label>Email:</label>
+                <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                <label>Message:</label>
+                <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                <input type="submit" value="SUBMIT">
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <p>
+        <p class="center">&copy Corey Tran's Port, <a href="https://formspree.io/f/xyylwkpw" target="_blank">Corey
+                Tran's Port</a></p>
+        <br>
+        </p>
+    </footer>
+
+</body>
+
+</html>
