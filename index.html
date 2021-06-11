@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=devide-width" />
     <title>Corey Tran</title>
-    <link rel="stylesheet" type="text/css" href="./Project_1.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 
 <!-- Body -->
@@ -16,13 +16,13 @@
     <!-- Navbar -->
     <div class="Navbar">
         <a class="active" href="#home">HOME</a>
+        <!-- New Section -->
+        <a href="#Slideshow">Slideshow</a>
         <a href="#about">About</a>
         <a href="#github">GitHub</a>
-        <a href="#contact">Contact</a>
+        <!-- Onclick and ondblclick functions added to open and close contact form -->
+        <a onclick="openForm()" ondblclick="closeForm()">Contact</a>
     </div>
-
-    <br>
-    <br>
 
     <!-- Background Video -->
     <div id="home">
@@ -51,6 +51,49 @@
         </strong>
     </div>
 
+    <!-- SLideshow section -->
+    <div id="Slideshow">
+        <div id="Slideshow_Background">
+            <div id="Slideshow_Container">
+                <!-- Slide 1 of 4 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="img/html.png" alt="HTML logo">
+                    <div class="text">I'm trained in HTML</div>
+                </div>
+                <!-- Slide 2 of 4 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="img/css.png" alt="CSS logo">
+                    <div class="text">CSS</div>
+                </div>
+                <!-- Slide 3 of 4 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="img/javascript.png" alt="JavaScript logo">
+                    <div class="text">JavaScript</div>
+                </div>
+
+                <!-- Slide 4 of 4 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="img/programming.png"
+                        alt="Replace with a picture of your choosing">
+                    <div class="text"><a class="white-text" onclick="openForm()" href="#Contact">Contact me now!</a>
+                    </div>
+                </div>
+                <!-- Previous and next buttons -->
+                <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br> <!-- Adds space between the slideshow and the dots -->
+
+            <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+            <div style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+    </div>
+
     <!-- About Section -->
     <div class="Row" id="about">
         <!-- Left Column -->
@@ -61,7 +104,8 @@
         <div class="Column_1">
             <h1>About</h1>
             <p>
-                I am a Chick-fil-A Team Lead who enjoys coding. As this pandemic slowly dies down, I find myself working
+                I am a Chick-fil-A Team Lead who enjoys coding. As this pandemic slowly dies down, I find myself
+                working
                 out
                 and trying to be healthier.
                 <br>
@@ -69,8 +113,9 @@
                     Academy</a> by the end of the summer. My main areas of knowledge in languages are HTML, CSS, and
                 Pyton.
                 <br>
-                <br>I am unsure what I will be doing with my skills in the long run but my goal is to be able to provide
-                coding for those who may need it. <a href="#contact">Contact</a>
+                <br>I am unsure what I will be doing with my skills in the long run but my goal is to be able to
+                provide
+                coding for those who may need it. <a onclick="openForm()">Contact</a> me below!
             </p>
         </div>
     </div>
@@ -80,8 +125,7 @@
         <!-- Left Column -->
         <div class="Column_1">
             <h1>GitHub</h1>
-            <p>
-                You can view my coding projects on my GitHub profile here:
+            <p>You can view my coding projects on my GitHub profile here:
                 <br>
             <p class="center"><a href="https://github.com/trancor000" target="_blank">Corey Tran's Github</a>
             </p>
@@ -94,24 +138,23 @@
     </div>
 
     <!-- Contact Section -->
-    <div class="Row" id="contact">
-        <!-- Contact image, left column -->
-        <div class="Column_2 Column_tall">
-            <img src="img/email_icon.png" alt="Email_Image">
-        </div>
-        <!-- Contact form, right column -->
-        <div class="Column_1 Column_tall">
+    <div id="contact">
+        <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+        <div class="form-popup" id="myForm">
+            <form action="https://formspree.io/f/xyylwkpw" method="POST" class="form-container"></form>
+            <!-- -->
             <h1>Contact</h1>
-            <!-- This specifies where and how to send the form data; we are leaving it blank -->
-            <form action="" method="POST">
-                <!-- Here we are utiliizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
-                <label>Name:</label>
-                <input type="text" placeholder="Please enter your name here">
-                <label>Email:</label>
-                <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
-                <label>Message:</label>
-                <input type="text" id="Message" name="Message" placeholder="Please write your message here">
-                <input type="submit" value="SUBMIT">
+            <label for="name"><b>Name:</b></label>
+            <input type="text" placeholder="Please enter your name here" name="name" required>
+            <label for="phone"><b>Phone</b></label>
+            <input type="text" placeholder="Type your phone number here" name="phone">
+            <label for="email"><b>Email:</b></label>
+            <input type="text" placeholder="Type your email address here" name="email" required>
+            <label for="message"><b>Message</b></label>
+            <input type="text" placeholder="Type your message here" name="message">
+
+            <button type="submit" class="btn">SUBMIT</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
             </form>
         </div>
     </div>
@@ -124,7 +167,7 @@
         <br>
         </p>
     </footer>
-
+    <script src="JS/index.css"></script>
 </body>
 
 </html>
