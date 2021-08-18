@@ -213,7 +213,7 @@ footer {
 }
 
 .mySlides{
-    display: none; /* This prevents the images from being displayed, we will use the JS to display these */
+    display: active; /* This prevents the images from being displayed, we will use the JS to display these */
 }
 
 /* Slideshow section / container */

@@ -2,174 +2,178 @@
 <html>
 
 <head>
+
     <title>trancor000.github.io</title>
+    <link rel="stylesheet" href="CSS/index.css">
 </head>
 
-<<<<<<< Updated upstream
-<body>
+<<<<<<< Updated upstream <body>
     <h1>Hello World</h1>
     <p>I am hosted with GitHub Pages.</p>
-=======
-<!-- Body -->
+    =======
+    <!-- Body -->
 
-<body class="Background">
+    <body class="Background">
 
-    <!-- Navbar -->
-    <div class="Navbar">
-        <a class="active" href="#home">HOME</a>
-        <!-- New Section -->
-        <a href="#Slideshow">Slideshow</a>
-        <a href="#about">About</a>
-        <a href="#github">GitHub</a>
-        <!-- Onclick and ondblclick functions added to open and close contact form -->
-        <a onclick="openForm()" ondblclick="closeForm()">Contact</a>
-    </div>
+        <!-- Navbar -->
+        <div class="Navbar">
+            <a class="active" href="#home">HOME</a>
+            <!-- New Section -->
+            <a href="#Slideshow">Slideshow</a>
+            <a href="#about">About</a>
+            <a href="#github">GitHub</a>
+            <a
+                href="file:///C:/Users/Owner/OneDrive/Documents/GitHub/trancor000.github.io/firstProject.html">Examples</a>
+            <!-- Onclick and ondblclick functions added to open and close contact form -->
+            <a onclick="openForm()" ondblclick="closeForm()">Contact</a>
+        </div>
 
-    <!-- Background Video -->
-    <div id="home">
-        <video autoplay muted loop id="Programming_Video">
-            <source src="https://youtu.be/MAlSjtxy5ak?t=8" type="video/mp4">
-            <!-- Display message if video fails to run-->
-            Your browser does not support HTML5 video.
-        </video>
-    </div>
+        <!-- Background Video -->
+        <div id="home">
+            <video autoplay muted loop id="Programming_Video">
+                <source src="https://youtu.be/MAlSjtxy5ak?t=8" type="video/mp4">
+                <!-- Display message if video fails to run-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
 
-    <!-- Video Text -->
-    <div class="Video_Text">
-        <h1 class="white-text">Corey's Unofficial Portfolio</h1>
-        <strong>
-            <p class="center">
-                <q>I serve not for monetary gain,
-                    <br>but to benefit and make a difference to those around me.
-                </q>
-                <br>
-                <br>My name is Corey Tran. Welcome to my unofficial portfolio website. Here, I will be telling you about
-                my
-                background and experience.
-                <br>
-                <br>I hope you enjoy your visit!
-            </p>
-        </strong>
-    </div>
+        <!-- Video Text -->
+        <div class="Video_Text">
+            <h1 class="white-text">Corey's Unofficial Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>I serve not for monetary gain,
+                        <br>but to benefit and make a difference to those around me.
+                    </q>
+                    <br>
+                    <br>My name is Corey Tran. Welcome to my unofficial portfolio website. Here, I will be telling you
+                    about
+                    my
+                    background and experience.
+                    <br>
+                    <br>I hope you enjoy your visit!
+                </p>
+            </strong>
+        </div>
 
-    <!-- SLideshow section -->
-    <div id="Slideshow">
-        <div id="Slideshow_Background">
-            <div id="Slideshow_Container">
-                <!-- Slide 1 of 4 -->
-                <div class="mySlides fade">
-                    <img class="Slideshow_Images" src="img/html.png" alt="HTML logo">
-                    <div class="text">I'm trained in HTML</div>
-                </div>
-                <!-- Slide 2 of 4 -->
-                <div class="mySlides fade">
-                    <img class="Slideshow_Images" src="img/css.png" alt="CSS logo">
-                    <div class="text">CSS</div>
-                </div>
-                <!-- Slide 3 of 4 -->
-                <div class="mySlides fade">
-                    <img class="Slideshow_Images" src="img/javascript.png" alt="JavaScript logo">
-                    <div class="text">JavaScript</div>
-                </div>
-
-                <!-- Slide 4 of 4 -->
-                <div class="mySlides fade">
-                    <img class="Slideshow_Images" src="img/programming.png"
-                        alt="Replace with a picture of your choosing">
-                    <div class="text"><a class="white-text" onclick="openForm()" href="#Contact">Contact me now!</a>
+        <!-- SLideshow section -->
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+                    <!-- Slide 1 of 4 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="img/html.png" alt="HTML logo">
+                        <div class="text">I'm trained in HTML</div>
                     </div>
+                    <!-- Slide 2 of 4 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="img/css.png" alt="CSS logo">
+                        <div class="text">CSS</div>
+                    </div>
+                    <!-- Slide 3 of 4 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="img/javascript.png" alt="JavaScript logo">
+                        <div class="text">JavaScript</div>
+                    </div>
+
+                    <!-- Slide 4 of 4 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="img/programming.png"
+                            alt="Replace with a picture of your choosing">
+                        <div class="text"><a class="white-text" onclick="openForm()" href="#Contact">Contact me now!</a>
+                        </div>
+                    </div>
+                    <!-- Previous and next buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
                 </div>
-                <!-- Previous and next buttons -->
-                <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="Next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-            <br> <!-- Adds space between the slideshow and the dots -->
+                <br> <!-- Adds space between the slideshow and the dots -->
 
-            <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
-            <div style="text-align: center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
+                <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- About Section -->
-    <div class="Row" id="about">
-        <!-- Left Column -->
-        <div class="Column_2">
-            <img src="img/pythoncode.jpg" alt="Python Logo">
+        <!-- About Section -->
+        <div class="Row" id="about">
+            <!-- Left Column -->
+            <div class="Column_2">
+                <img src="img/pythoncode.jpg" alt="Python Logo">
+            </div>
+            <!-- Right Column -->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I am a Chick-fil-A Team Lead who enjoys coding. As this pandemic slowly dies down, I find myself
+                    working
+                    out
+                    and trying to be healthier.
+                    <br>
+                    <br>I will be graduating from <a href="https://www.learncodinganywhere.com" target="_blank">The Tech
+                        Academy</a> by the end of the summer. My main areas of knowledge in languages are HTML, CSS, and
+                    Pyton.
+                    <br>
+                    <br>I am unsure what I will be doing with my skills in the long run but my goal is to be able to
+                    provide
+                    coding for those who may need it. <a onclick="openForm()">Contact</a> me below!
+                </p>
+            </div>
         </div>
-        <!-- Right Column -->
-        <div class="Column_1">
-            <h1>About</h1>
+
+        <!-- GitHub Section -->
+        <div class="Row" id="github">
+            <!-- Left Column -->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>You can view my coding projects on my GitHub profile here:
+                    <br>
+                <p class="center"><a href="https://github.com/trancor000" target="_blank">Corey Tran's Github</a>
+                </p>
+                </p>
+            </div>
+            <!-- Right Column -->
+            <div class="Column_2">
+                <a href="https://github.com/trancor000" target="_blank"><img src="img/github.png" alt="GitHub Logo"></a>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div id="contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <div class="form-popup" id="myForm">
+                <form action="https://formspree.io/f/xyylwkpw" method="POST" class="form-container"></form>
+                <!-- -->
+                <h1>Contact</h1>
+                <label for="name"><b>Name:</b></label>
+                <input type="text" placeholder="Please enter your name here" name="name" required>
+                <label for="phone"><b>Phone</b></label>
+                <input type="text" placeholder="Type your phone number here" name="phone">
+                <label for="email"><b>Email:</b></label>
+                <input type="text" placeholder="Type your email address here" name="email" required>
+                <label for="message"><b>Message</b></label>
+                <input type="text" placeholder="Type your message here" name="message">
+
+                <button type="submit" class="btn">SUBMIT</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer section -->
+        <footer>
             <p>
-                I am a Chick-fil-A Team Lead who enjoys coding. As this pandemic slowly dies down, I find myself
-                working
-                out
-                and trying to be healthier.
-                <br>
-                <br>I will be graduating from <a href="https://www.learncodinganywhere.com" target="_blank">The Tech
-                    Academy</a> by the end of the summer. My main areas of knowledge in languages are HTML, CSS, and
-                Pyton.
-                <br>
-                <br>I am unsure what I will be doing with my skills in the long run but my goal is to be able to
-                provide
-                coding for those who may need it. <a onclick="openForm()">Contact</a> me below!
+            <p class="center">&copy Corey Tran's Port, <a href="https://formspree.io/f/xyylwkpw" target="_blank">Corey
+                    Tran's Port</a></p>
+            <br>
             </p>
-        </div>
-    </div>
-
-    <!-- GitHub Section -->
-    <div class="Row" id="github">
-        <!-- Left Column -->
-        <div class="Column_1">
-            <h1>GitHub</h1>
-            <p>You can view my coding projects on my GitHub profile here:
-                <br>
-            <p class="center"><a href="https://github.com/trancor000" target="_blank">Corey Tran's Github</a>
-            </p>
-            </p>
-        </div>
-        <!-- Right Column -->
-        <div class="Column_2">
-            <a href="https://github.com/trancor000" target="_blank"><img src="img/github.png" alt="GitHub Logo"></a>
-        </div>
-    </div>
-
-    <!-- Contact Section -->
-    <div id="contact">
-        <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
-        <div class="form-popup" id="myForm">
-            <form action="https://formspree.io/f/xyylwkpw" method="POST" class="form-container"></form>
-            <!-- -->
-            <h1>Contact</h1>
-            <label for="name"><b>Name:</b></label>
-            <input type="text" placeholder="Please enter your name here" name="name" required>
-            <label for="phone"><b>Phone</b></label>
-            <input type="text" placeholder="Type your phone number here" name="phone">
-            <label for="email"><b>Email:</b></label>
-            <input type="text" placeholder="Type your email address here" name="email" required>
-            <label for="message"><b>Message</b></label>
-            <input type="text" placeholder="Type your message here" name="message">
-
-            <button type="submit" class="btn">SUBMIT</button>
-            <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
-            </form>
-        </div>
-    </div>
-
-    <!-- Footer section -->
-    <footer>
-        <p>
-        <p class="center">&copy Corey Tran's Port, <a href="https://formspree.io/f/xyylwkpw" target="_blank">Corey
-                Tran's Port</a></p>
-        <br>
-        </p>
-    </footer>
-    <script src="JS/index.css"></script>
->>>>>>> Stashed changes
-</body>
+        </footer>
+        <script src="JS/index.css"></script>
+        >>>>>>> Stashed changes
+    </body>
 
 </html>
