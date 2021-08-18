@@ -23,6 +23,7 @@ function currentSlide(n) {
 
 
 function showSlides(n) {
+    var i;
     var slides = document.getElementsByClassName("mySlides"); // This takes all elements with the class name "mySlides" and stores them in the variable array "slides"
     var dots = document.getElementsByClassName("dot"); // This takes all elements with the class name "dot" and stores them in the variable array "dots"
     if (n > slides.length) { slideIndex = 1 }; // If n (the number passed into the function) is greater than the length of the array "slides", the slideIndex is set to 1
