@@ -44,10 +44,10 @@ h1:hover {
 p {
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify; /* Justify text within paragraph elements */
-    letter-spacing: 2px; /* Expands the text slightly */
-    font-size: 18;
-    padding-left: 18; /* Adds padding to the left of the paragraph */
-    padding-right: 18px;
+    letter-spacing: .1vw; /* Expands the text slightly */
+    font-size: 1.5vw;
+    padding-left: 1vw; /* Adds padding to the left of the paragraph */
+    padding-right: 1vw;
 }
 
 /* Paragraph hover */
@@ -83,8 +83,8 @@ q {
 img {
     filter: grayscale(60%); /* Rids pictures of 60% of color */
     border-radius: 6px; /* Gives images slightly rounded corners */
-    max-width: 90%; /* Ensures images stay within the width of container */
-    height: 300px; /* Sets height of images */
+    max-width: 100%; /* Ensures images stay within the width of container */
+    height: 100%; /* Sets height of images */
     display: block; /* Images are able to be centered */
     margin: auto auto auto auto; /* This centers all images */
 }
@@ -323,7 +323,7 @@ footer {
     width: 50%; /* Ensures column takes up half of page width */
     padding: 12px;
     padding-top: 5%; /* Ensures there's space between top of column and headings */
-    height: 350px; /* Sets height of column to 350px */
+    height: 450px; /* Sets height of column to 350px */
     background-color: #fff;
 }
 
@@ -339,7 +339,7 @@ footer {
     width: 50%;
     padding: 12px;
     padding-top: 2.4%;
-    height: 350px;
+    height: 450px;
     background-color: gray;
 }
 
