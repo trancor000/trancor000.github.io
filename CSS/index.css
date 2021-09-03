@@ -379,7 +379,7 @@ footer {
 
 /* Styling for the contact form */
 .form-popup {
-    border: 3px solid #f0f1f0; /* Creates a solid light gray border around the contact form */
+    border: 3px solid black; /* Creates a solid light gray border around the contact form */
     z-index: 8; /* This z-index ensures the contact form shows above all other elements on the page */
     display: none; /* Set the display to none, we will use JavaScript to show the contact form */
     position: fixed; /* The form stays in the same location no matter what */
@@ -391,16 +391,14 @@ footer {
 .form-container {
     max-width: 49vw; /* Relative sizing of the form container - 49% of the viewport width */
     padding: 1vw; /* Adds padding between the form-popup and the form-container */
-    background-color: white; 
 }
-
 /* Input fields */
 .form-container input[type=text] {
     width: 100%; /* The input boxes completely fill the width of the form-container */
     padding: .93vw; /* Adds padding to the input boxes */
     margin: .6vw 0 .6vw 0; /* Adds space between the input boxes and the labels */
     border: none; /* Removes the border from the input boxes */
-    background: Gainsboro; /* Sets the background color of the input boxes */
+    background: Gray; /* Sets the background color of the input boxes */
     font-size: 1vw; /* Relative font sizing based on the width of the viewport */
 }
 
@@ -418,7 +416,7 @@ button {
 
 /* Hover effect for contact and submit buttons */
 button:hover, .form-container .btn:hover {
-    color: white; /* This makes the text in the buttons white when hovered over */
+    color: gray; /* This makes the text in the buttons white when hovered over */
     background-color: black; /* The background of the button changes to black when hovered over */
     transition-duration: 1s; /* This makes the transition last 1 second */
     -webkit-transition-duration: 1s; /* For Safari 4.0-8.0 */
