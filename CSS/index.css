@@ -323,7 +323,7 @@ footer {
     width: 50%; /* Ensure column takes up half of page width */
     padding: 12px;
     padding-top: 5%; /* Ensures there's space between top of column and headings */
-    height: 350px; /* Sets height of column to 350px */
+    height: 600px; /* Sets height of column to 350px */
     background-color: #fff;
 }
 
@@ -339,7 +339,7 @@ footer {
     width: 50%;
     padding: 12px;
     padding-top: 2.4%;
-    height: 350px;
+    height: 600px;
     background-color: gray;
 }
 
