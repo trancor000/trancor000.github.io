@@ -29,17 +29,15 @@
             <a onclick="openForm()" ondblclick="closeForm()">Contact</a>
         </div>
 
-        <!-- Background Video -->
-        <div id="home">
-            <video autoplay muted loop id="Programming_Video">
-                <source src="https://youtu.be/MAlSjtxy5ak?t=8" type="video/mp4">
-                <!-- Display message if video fails to run-->
-                Your browser does not support HTML5 video.
-            </video>
+        <!-- Background -->
+        <div class="Background">
+            <div id="home">
+                <img src="img/javascript.jpg" alt="JS">
+            </div>
         </div>
 
-        <!-- Video Text -->
-        <div class="Video_Text">
+        <!-- BackgroundText -->
+        <div class="Background_Text">
             <h1 class="white-text">Corey's Unofficial Portfolio</h1>
             <strong>
                 <p class="center">
@@ -163,7 +161,7 @@
                 <label for="message"><b>Message</b></label>
                 <input type="text" placeholder="Type your message here" name="message">
 
-                <button type="submit" class="btn">SUBMIT</button>
+                <button type="submit" class="btn submit" onclick="submitForm()">SUBMIT</button>
                 <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
                 </form>
             </div>
@@ -171,9 +169,11 @@
 
         <!-- Footer section -->
         <footer>
+            <p class="center">Here is a copy of my resume <a
+                    href="file:///C:/Users/Owner/OneDrive/Documents/Life/Corey%20Tran%20Resume.pdf"
+                    target="_blank"><br>Corey Tran's Resume</a></p>
             <p>
-            <p class="center">&copy Corey Tran's Port, <a href="https://formspree.io/f/xyylwkpw" target="_blank">Corey
-                    Tran's Port</a></p>
+            <p class="center">&copy Corey Tran's Port</p>
             <br>
             </p>
         </footer>
